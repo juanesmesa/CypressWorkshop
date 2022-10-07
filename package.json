@@ -19,5 +19,8 @@
   "homepage": "https://github.com/juanesmesa/CypressWorkshop#readme",
   "devDependencies": {
     "cypress": "^10.9.0"
+  },
+  "dependencies": {
+    "chai-sorted": "^0.2.0"
   }
 }
