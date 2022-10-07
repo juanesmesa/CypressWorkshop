@@ -8,5 +8,5 @@ export default class CheckOutpage {
     title = '.title'
     itemPrice = "*[class^='inventory_item_price']"
     sumaryTotal = '.summary_subtotal_label'
-                
+       
 }
