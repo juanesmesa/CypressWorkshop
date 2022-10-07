@@ -47,7 +47,7 @@ describe("Given I am in products page", () => {
             if (index >= 0) cy.wrap($btn).click()
         })
         cy.get(productPage.removeCartButton).each(($btn, index) => {
-            cy.get(productPage.removeCartButton).should('have.text', 'Remove')
+            cy.get(productPage.removeCartButton).should('have.text', 'Removes')
         })
     })
 
