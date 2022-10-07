@@ -8,5 +8,4 @@ export default class ProductsPage{
     addToCartButton = "*[id^='add-to-cart']"
     allRemoveButtons = "*[data-test^='remove-']"
     removeCartButton = '[data-test="remove-sauce-labs-onesie"]'
-
 }
