@@ -1,0 +1,26 @@
+{
+  "name": "cypressworkshop",
+  "version": "1.0.0",
+  "description": "\"# CypressWorkshop\"",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanesmesa/CypressWorkshop.git"
+  },
+  "author": "Juanes Mesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanesmesa/CypressWorkshop/issues"
+  },
+  "homepage": "https://github.com/juanesmesa/CypressWorkshop#readme",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  },
+  "dependencies": {
+    "chai-sorted": "^0.2.0"
+  }
+}
