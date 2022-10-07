@@ -17,7 +17,6 @@ describe("Given I am in products page", () => {
             cy.get(loginPage.passwordInputField).type(users.password)
             cy.get(loginPage.loginButton).click()
             cy.get(productPage.shoppingBadge).should('not.exist')
-
         });
     });
 
@@ -30,6 +29,7 @@ describe("Given I am in products page", () => {
             optionsArray[index] = parseFloat($el.text().split('$')[1])
             expect(optionsArray).to.be.sorted()
         })
+
     })
 
 
@@ -47,8 +47,7 @@ describe("Given I am in products page", () => {
             if (index >= 0) cy.wrap($btn).click()
         })
         cy.get(productPage.removeCartButton).each(($btn, index) => {
-            cy.get(productPage.removeCartButton).should('have.text', 'Remove')
-
+            cy.get(productPage.removeCartButton).should('have.text', 'Removes')
         })
     })
 
@@ -61,7 +60,6 @@ describe("Given I am in products page", () => {
 
         cy.get(productPage.shoppingBadge).then(($bdg) => {
             const badgyNumber = $bdg.text()
-
             cy.get(productPage.allRemoveButtons).should('have.length', badgyNumber)
 
         })
